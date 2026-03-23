@@ -3,142 +3,237 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matthew Mao | Resume</title>
+  <title>Matthew Mao | Portfolio</title>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+    * {
       margin: 0;
-      background: #f7f9fc;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-      background: #fff;
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
     }
-    h1 {
-      margin-bottom: 5px;
-    }
-    .contact {
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-    .contact a {
-      color: #0073b1;
+
+    a {
+      color: #38bdf8;
       text-decoration: none;
     }
-    h2 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-      margin-top: 30px;
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
     }
-    .job {
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      z-index: 100;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    nav a {
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #94a3b8;
       margin-bottom: 20px;
     }
-    .job-title {
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 6px;
       font-weight: bold;
+      margin: 5px;
     }
-    .date {
-      float: right;
+
+    /* SECTION */
+    section {
+      margin-top: 60px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    /* CARD */
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
       font-size: 14px;
-      color: #666;
+      margin-bottom: 10px;
+      color: #94a3b8;
     }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
     ul {
-      margin-top: 5px;
+      padding-left: 20px;
     }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* SKILLS */
     .skills {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
+
     .skill {
-      background: #eef3f8;
-      padding: 5px 10px;
-      border-radius: 5px;
+      background: #334155;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      color: #64748b;
       font-size: 14px;
-    }
-    .download {
-      margin-top: 20px;
-    }
-    .download a {
-      text-decoration: none;
-      background: #0073b1;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+
+  <!-- NAV -->
+  <nav>
+    <div><strong>Matthew Mao</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
     <h1>Matthew Mao</h1>
-    <div class="contact">
-      📞 408-702-5355 | 
-      📧 <a href="mailto:maoymatthew@gmail.com">maoymatthew@gmail.com</a> | 
-      🔗 <a href="https://www.linkedin.com/in/matthewymao" target="_blank">LinkedIn</a>
-    </div>
+    <p>Biospecimen Associate II • Automation • Data & Process Improvement</p>
 
-    <div class="download">
-      <a href="resume2026.pdf" download>Download PDF</a>
-    </div>
+    <a class="btn" href="resume.pdf" download>Download Resume</a>
+    <a class="btn" href="https://www.linkedin.com/in/matthewymao" target="_blank">LinkedIn</a>
+  </div>
 
-    <h2>Education</h2>
-    <p><strong>B.S. Biochemistry and Molecular Biology</strong>, <strong>Minor in Anthropology</strong> - University of California, Santa Barbara (2023)</p>
-    
-    <p><strong>Relevant Coursework:</strong> Biochemistry, Organic Chemistry, Molecular Genetics, 
-    Human Biology, Microbiology, Immunology</p>
+  <div class="container">
 
-    <p><strong>UC San Diego Extension Coursework:</strong> Analytical Chemistry, Clinical Hematology</p>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Biochemistry graduate with hands-on experience in clinical lab operations, automation, 
+        and workflow optimization. Proven ability to improve efficiency, ensure compliance, 
+        and build scalable systems using tools like Power Automate, SQL, and Python.
+      </p>
+    </section>
 
-    <h2>Experience</h2>
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Experience</h2>
 
-    <div class="job">
-      <div>
-        <span class="job-title">Biospecimen Associate II — Guardant Health</span>
-        <span class="date">Mar 2024 – Present</span>
+      <div class="card">
+        <div class="card-header">
+          <span>Guardant Health</span>
+          <span>Mar 2024 – Present</span>
+        </div>
+        <h3>Biospecimen Associate II</h3>
+        <ul>
+          <li>Processed PHI-sensitive liquid biopsy samples under strict HIPAA compliance</li>
+          <li>Managed 10,000+ samples, improving traceability and storage efficiency</li>
+          <li>Reduced disposal timeline from 15 → 7 days (~30% efficiency gain)</li>
+          <li>Built Power Automate workflows saving 5–10 hours/week</li>
+          <li>Supported Pfizer 2026 audit and ensured SOP compliance</li>
+          <li>Designed 3D OpenSCAD component reducing operational costs</li>
+        </ul>
       </div>
-      <ul>
-        <li>Processed and logged sensitive patient PHI from liquid biopsy kits in compliance with HIPAA standards</li>
-        <li>Operated centrifuges, pipettes, and ultra-low freezers to isolate and store blood plasma</li>
-        <li>Managed over 10,000 patient samples, improving storage efficiency and traceability</li>
-        <li>Supported Pfizer 2026 audit by ensuring regulatory and procedural compliance</li>
-        <li>Identified workflow inefficiencies and implemented process improvements</li>
-        <li>Designed a 3D-modeled Active Clinical Box lid using OpenSCAD, reducing replacement costs</li>
-        <li>Reduced blood tube disposal time from 15 days to 7 days (~30% efficiency gain)</li>
-        <li>Built automated workflows using Power Automate and JSON, saving 5–10 hours/week</li>
-      </ul>
-    </div>
 
-    <div class="job">
-      <div>
-        <span class="job-title">Lab Technician — UCSB (Enoch Yeung Lab)</span>
-        <span class="date">Nov 2022 – Jun 2023</span>
+      <div class="card">
+        <div class="card-header">
+          <span>UCSB – Enoch Yeung Lab</span>
+          <span>Nov 2022 – Jun 2023</span>
+        </div>
+        <h3>Lab Technician</h3>
+        <ul>
+          <li>Cultivated ADP1 strains and conducted experimental assays</li>
+          <li>Performed 96-well plate titrations with multiple variables</li>
+          <li>Identified flawed methodologies and improved data reliability</li>
+        </ul>
       </div>
-      <ul>
-        <li>Cultivated Acinetobacter baylyi strains for experimental analysis</li>
-        <li>Conducted 96-well plate titration experiments with various sugars</li>
-        <li>Analyzed inconsistent data and improved experimental reliability</li>
-      </ul>
-    </div>
 
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">Python</div>
-      <div class="skill">SQL</div>
-      <div class="skill">HTML</div>
-      <div class="skill">JSON</div>
-      <div class="skill">MATLAB</div>
-      <div class="skill">Power Automate</div>
-      <div class="skill">LIMS</div>
-      <div class="skill">PCR</div>
-      <div class="skill">Chromatography</div>
-      <div class="skill">Micropipetting</div>
-      <div class="skill">Gel Electrophoresis</div>
-    </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">HTML</div>
+        <div class="skill">JSON</div>
+        <div class="skill">MATLAB</div>
+        <div class="skill">Power Automate</div>
+        <div class="skill">LIMS</div>
+        <div class="skill">PCR</div>
+        <div class="skill">Chromatography</div>
+        <div class="skill">Micropipetting</div>
+        <div class="skill">Gel Electrophoresis</div>
+      </div>
+    </section>
 
   </div>
+
+  <footer>
+    © 2026 Matthew Mao
+  </footer>
+
 </body>
 </html>
