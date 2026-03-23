@@ -17,7 +17,6 @@
       font-family: 'Segoe UI', sans-serif;
       background: #0f172a;
       color: #e2e8f0;
-      transition: background 0.3s ease, color 0.3s ease;
     }
 
     a {
@@ -31,21 +30,6 @@
       padding: 40px 20px;
     }
 
-    /* DARK/LIGHT MODE STYLES */
-    body.light {
-      background: #f8fafc;
-      color: #000000;
-    }
-
-    body.light a {
-      color: #0ea5e9;
-    }
-
-    body.light nav {
-      background: rgba(248, 250, 252, 0.9);
-      border-bottom: 1px solid #cbd5e1;
-    }
-
     /* NAV */
     nav {
       position: sticky;
@@ -57,27 +41,11 @@
       justify-content: space-between;
       z-index: 100;
       border-bottom: 1px solid #1e293b;
-      transition: background 0.3s ease, border-color 0.3s ease;
     }
 
     nav a {
       margin-left: 20px;
       font-size: 14px;
-    }
-
-    .toggle-btn {
-      padding: 6px 12px;
-      border-radius: 6px;
-      background: #38bdf8;
-      color: #0f172a;
-      font-weight: bold;
-      cursor: pointer;
-      border: none;
-      transition: background 0.3s ease;
-    }
-
-    .toggle-btn:hover {
-      background: #0ea5e9;
     }
 
     /* HERO */
@@ -94,12 +62,6 @@
     .hero p {
       color: #94a3b8;
       margin-bottom: 20px;
-      transition: color 0.3s ease;
-    }
-
-body.light .hero p {
-  color: #000000;
-}
     }
 
     .btn {
@@ -110,11 +72,6 @@ body.light .hero p {
       border-radius: 6px;
       font-weight: bold;
       margin: 5px;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #0ea5e9;
     }
 
     /* SECTION */
@@ -134,12 +91,7 @@ body.light .hero p {
       padding: 20px;
       border-radius: 10px;
       margin-bottom: 20px;
-      transition: transform 0.2s ease, background 0.3s ease;
-    }
-
-    body.light .card {
-      background: #e2e8f0;
-      color: #1e293b;
+      transition: transform 0.2s ease;
     }
 
     .card:hover {
@@ -152,11 +104,6 @@ body.light .hero p {
       font-size: 14px;
       margin-bottom: 10px;
       color: #94a3b8;
-      transition: color 0.3s ease;
-    }
-
-    body.light .card-header {
-      color: #64748b;
     }
 
     .card h3 {
@@ -185,10 +132,6 @@ body.light .hero p {
       font-size: 13px;
     }
 
-    body.light .skill {
-      background: #cbd5e1;
-    }
-
     /* FOOTER */
     footer {
       text-align: center;
@@ -196,11 +139,6 @@ body.light .hero p {
       padding: 20px;
       color: #64748b;
       font-size: 14px;
-      transition: color 0.3s ease;
-    }
-
-    body.light footer {
-      color: #475569;
     }
   </style>
 </head>
@@ -214,8 +152,6 @@ body.light .hero p {
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
     </div>
   </nav>
 
@@ -228,18 +164,15 @@ body.light .hero p {
     <a class="btn" href="https://www.linkedin.com/in/matthewymao" target="_blank">LinkedIn</a>
   </div>
 
-  <div class="container"></div>
-    
-
   <div class="container">
 
     <!-- ABOUT -->
     <section id="about">
       <h2>About</h2>
       <p>
-        Biochemistry and Molecular Biology graduate with hands-on experience in clinical lab operations,
-        automation, and workflow optimization. Proven ability to improve efficiency, ensure compliance, 
-        and build scalable systems using tools like Power Automate and SQL.
+        Biochemistry graduate with hands-on experience in clinical lab operations, automation, 
+        and workflow optimization. Proven ability to improve efficiency, ensure compliance, 
+        and build scalable systems using tools like Power Automate, SQL, and Python.
       </p>
     </section>
 
@@ -296,43 +229,11 @@ body.light .hero p {
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="card">
-        <div class="card-header">
-          <span>Power Automate Workflow</span>
-          <span>2025</span>
-        </div>
-        <h3>Sample Management Automation</h3>
-        <ul>
-          <li>Automated sample logging and tracking for 10,000+ biospecimens</li>
-          <li>Integrated Teams and SharePoint notifications to streamline lab communication</li>
-          <li>Reduced manual entry time by 8–12 hours/week</li>
-          <li>Designed adaptive workflows to handle exceptions and errors automatically</li>
-        </ul>
-      </div>
-
-    </section>
-
   </div>
 
   <footer>
     © 2026 Matthew Mao
   </footer>
-
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('light');
-      const btn = document.querySelector('.toggle-btn');
-      if(document.body.classList.contains('light')) {
-        btn.textContent = '🌙';
-      } else {
-        btn.textContent = '☀️';
-      }
-    }
-  </script>
 
 </body>
 </html>
