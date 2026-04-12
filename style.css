@@ -121,6 +121,15 @@
       padding-left: 10px;
     }
 
+    #about p {
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    #about p:last-child {
+      margin-bottom: 0;
+    }
+
     /* CARD */
     .card {
       background: #1e293b;
