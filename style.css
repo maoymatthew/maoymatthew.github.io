@@ -78,6 +78,13 @@
       background: #0ea5e9;
     }
 
+    .active {
+      color: #ffffff;
+      font-weight: bold;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 2px;
+    }
+
     /* HERO */
     .hero {
       text-align: center;
