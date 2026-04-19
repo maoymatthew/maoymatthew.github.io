@@ -16,11 +16,12 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="experience.html">Experience</a>
-      <a href="skills.html">Skills</a>
       <a href="projects.html">Projects</a>
     </div>
   </nav>
 
+    <div class="container">
+      
      <!-- PROJECTS -->
     <section id="projects">
       
@@ -58,6 +59,22 @@
     </section>
 
   </div>
+
+  <footer>
+    © 2026 Matthew Mao
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+      const btn = document.querySelector('.toggle-btn');
+      if(document.body.classList.contains('light')) {
+        btn.textContent = '🌙';
+      } else {
+        btn.textContent = '☀️';
+      }
+    }
+  </script>
 
 </body>
 </html>
