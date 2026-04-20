@@ -214,3 +214,8 @@ body.light footer {
 body.light nav a {
   color: #1e293b;
 }
+
+body.light .active {
+  color: #000000;
+  border-bottom: 2px solid #0ea5e9;
+}
