@@ -5,14 +5,14 @@
   scroll-behavior: smooth;
 }
 
-.about-pic {
+.index-pic {
   display: block;
   margin: 40px auto;
   max-width: 100%;
   height: auto;
 }
 
-.index-pic {
+.about-pic {
   display: block;
   margin: 40px auto;
   max-width: 100%;
