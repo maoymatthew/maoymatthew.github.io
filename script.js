@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('theme');
   const btn = document.querySelector('.toggle-btn');
 
-  // Default to light mode unless dark was explicitly saved
   if (savedTheme !== 'dark') {
     document.body.classList.add('light');
     if (btn) btn.textContent = '🌙';
