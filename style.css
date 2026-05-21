@@ -7,7 +7,7 @@
 
 .index-pic {
   display: flex;
-  margin: 40px auto;
+  margin: 30px auto;
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -15,7 +15,7 @@
 
 .about-pic {
   display: block;
-  margin: 40px auto;
+  margin: 30px auto;
   width: 100%;
   max-width: 300px;
   height: auto;
