@@ -13,12 +13,19 @@
   height: auto;
 }
 
-.about-pic {
-  display: block;
-  margin: 30px auto;
+.banner {
   width: 100%;
-  max-width: 300px;
-  height: auto;
+  max-width: 1000px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.about-banner-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
 }
 
 body {
