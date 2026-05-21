@@ -8,14 +8,16 @@
 .index-pic {
   display: block;
   margin: 40px auto;
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
   height: auto;
 }
 
 .about-pic {
   display: block;
   margin: 40px auto;
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
   height: auto;
 }
 
