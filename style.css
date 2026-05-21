@@ -6,17 +6,17 @@
 }
 
 .about-pic {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .index-pic {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
