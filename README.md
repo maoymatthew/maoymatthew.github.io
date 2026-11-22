@@ -1,1 +1,1 @@
-# Resume for Matthew Mao, to be displayed on Github Pages
+# Website and resume for Matthew Mao
